@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Bare v5.0.7 (https://startbootstrap.com/template/bare)
-* Copyright 2013-2021 Start Bootstrap
+* Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
 /*!
@@ -11284,5 +11284,86 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important;
+  }
+}
+html, body {
+  background: #000;
+  color: #fff;
+  font-size: calc(100% + 0.15vw);
+}
+
+.width-75 {
+  width: 75%;
+}
+
+.spacer {
+  margin-top: 45vh;
+}
+
+.show-on-scroll {
+  opacity: 0;
+  transition: opacity 0.5s 0.25s ease-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.down_arrow {
+  width: 64px;
+}
+
+.scrolldown {
+  opacity: 0.5;
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  transition: all 0.2s;
+}
+.scrolldown:hover {
+  opacity: 1;
+}
+
+.scrollup {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  color: #666;
+}
+
+@media (max-width: 800px) {
+  .spacer {
+    margin-top: 25vh;
+  }
+
+  .width-75 {
+    width: 100% !important;
+  }
+}
+@media print {
+  .container {
+    margin: 2em;
+  }
+
+  .w-75 {
+    width: 100% !important;
+  }
+
+  .spacer {
+    margin-top: 3rem;
+  }
+
+  .scrolldown {
+    display: none;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+
+  .scrollup {
+    display: none;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
   }
 }
