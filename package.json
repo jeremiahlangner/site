@@ -9,7 +9,7 @@
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
-        "deploy": "cp -r dist ../jeremiahlangner.github.io && git add . && git commit -m 'update resume' && git push",
+        "deploy": "cp -rf ./dist/ ../jeremiahlangner.github.io/ && cd ../jeremiahlangner.github.io && git add . && git commit -m 'update resume' && git push",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
